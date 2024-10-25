@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 585px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),  rgba(0,0,0,0.75)),
+    url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+}
+.logo{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+
+}
+.tengah{
+   text-align: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.content{
+    font-family:arial;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+.content h1 span{
+  color: ;
+}
+.content p {
+    font-size: 20px;
+    font-family: 30px;
+    margin: 1px auto;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    line-height: 15px;
+
+}
+ button{
+  cursor: pointer;
+  text-transform: uppercase;
+    margin: 15px;
+    padding: 15px 25px;
+    border: 3px solid #00ff00;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 700ms;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6);
+ }
+
+ button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1px;
+    background-color: #00ff00;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 700ms;
+ }
+ button:hover {
+    color: black;
+ }
+
+ button:hover::before {
+    width: 100%;
+ }
+
+ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Layout */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 2rem;
+  }
+  
+  /* Underline styles */
+  a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  /* Fade in */
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: #00ff00;
+    opacity: 0;
+    transition: opacity 400ms, transform 400ms;
+  }
+ 
+   
+  a:hover::after,
+  a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+  /* Slide in */
+  li:nth-child(2) a {
+    overflow: hidden;
+  }
+  
+  li:nth-child(2) a::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  li:nth-child(2) a:hover::after,
+  li:nth-child(2) a:focus::after{
+    transform: translate3d(0, 0, 0);
+  }
+  
+  /* Scale from center */
+  li:nth-child(3) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  li:nth-child(3) a:hover::after,
+  li:nth-child(3) a:focus::after{
+    transform: scale(1);
+  }
+
+  .gambar{
+    margin-top: 180px;
+    margin-left: 430px;
+  }
+
+.data{
+    font-family: arial;
+    margin-top: 135px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.biodata{
+  align-items: center;
+  display: flex;
+  margin-left: 350px;
+  gap: 20px;
+
+}
+
+.data p {
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.audio{
+  margin-top: 15px;
+}
+
+.foto{
+  border: 2.5px solid white;
+  border-radius: 50%;
+}
+
+.button-about{
+  margin-left: 480px;
+  margin-top: -40px;
+}
+
